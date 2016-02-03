@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="html">
   <head>
     <meta charset="utf-8">
 
@@ -16,6 +16,20 @@
   </head>
 
   <body class="index home-page">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=630424637093473";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="facebook-slider">
+      <div class="facebook-slider-trigger">F<br>A<br>C<br>E<br>B<br>O<br>O<br>K</div>
+      <div class="facebook-slider-inner">
+        <div class="fb-page" data-href="https://www.facebook.com/Colorgy-1529686803975150/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
+      </div>
+    </div>
     <div class="header-wrapper">
 	<header class="header fluid-width mobile-full-width">
 		<a class="header-logo"><img src="images/header_logo.png" /></a>
@@ -176,14 +190,11 @@
 
   $(window).on('wheel', function(e){
 
-    var window_width = $(window).width();
-
     var eo = e.originalEvent;
     if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
       //e.preventDefault();
 
-      if(eo.wheelDeltaY < -10  /*&& !scope.item.swipedLeft*/){
-        console.log('down');
+      if(eo.wheelDeltaY < -10){
         if(state == 'active'){
           if(current_page == 3){
             return false;
@@ -192,8 +203,7 @@
         }
       }
 
-      if(eo.wheelDeltaY > 10  /*&& scope.item.swipedLeft*/ ){
-        console.log('up');
+      if(eo.wheelDeltaY > 10){
         if(state == 'active'){
           if(current_page == 0){
             return false;
@@ -235,6 +245,58 @@
 		$('.image-slides .screen-shine:nth-child(1)').addClass('active');
 
   })
+
+
+
+  // Mobile Touch event
+
+  var element = document.getElementById('html');
+	element.addEventListener("touchstart", touchStart, false);
+	element.addEventListener("touchmove", touchMove, false);
+
+	var start = {x:0,y:0};
+
+	function touchStart(e) {
+
+		start.x = event.touches[0].pageX;
+		start.y = event.touches[0].pageY;
+	}
+
+	function touchMove(e){
+
+		offset = {};
+
+		offset.x = start.x - event.touches[0].pageX;
+		offset.y = start.y - event.touches[0].pageY;
+		mobileTouchTrigger(offset.x , offset.y);
+		console.log(offset);
+		return offset;
+	}
+
+	function mobileTouchTrigger(dx, dy){
+    if(Math.abs(dx) < 10 && Math.abs(dy) > 2){
+      //e.preventDefault();
+
+      if(dy > -10){
+        if(state == 'active'){
+          if(current_page == 3){
+            return false;
+          }
+          scrollPageFunc(current_page + 1, 'godown');
+        }
+      }
+
+      if(dy < 10){
+        if(state == 'active'){
+          if(current_page == 0){
+            return false;
+          }
+          scrollPageFunc(current_page - 1, 'goup');
+        }
+      }
+    }
+
+	}
 </script>
 
   </body>
