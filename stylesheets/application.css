@@ -642,12 +642,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 6px; }
     /* line 714, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .scroll-spy-dots .dot {
-      height: 12px;
-      width: 12px; }
+      height: 8px;
+      width: 8px; }
       /* line 718, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
       .scroll-spy-dots .dot .dot-inner {
-        height: 8px;
-        width: 8px; } }
+        height: 5px;
+        width: 5px; } }
 /* line 728, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .content-block {
   visibility: hidden; }
