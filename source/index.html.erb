@@ -160,7 +160,7 @@
   }
 
   $(window).on('wheel', function(e){
-
+  	console.log('onwheel');
     var eo = e.originalEvent;
     if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
       //e.preventDefault();
@@ -256,10 +256,11 @@
 	}
 
 	function mobileTouchTrigger(dx, dy){
+		console.log('touchMove');
     if(Math.abs(dx) < 10 && Math.abs(dy) > 2){
       //e.preventDefault();
 
-      if(dy > 50){
+      if(dy > 30){
         if(state == 'active'){
           if(current_page == 3){
             return false;
@@ -268,7 +269,7 @@
         }
       }
 
-      if(dy < -50){
+      if(dy < -30){
         if(state == 'active'){
           if(current_page == 0){
             return false;
