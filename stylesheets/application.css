@@ -647,15 +647,23 @@ h1, h2, h3, h4, h5, h6 {
       /* line 718, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
       .scroll-spy-dots .dot .dot-inner {
         height: 5px;
-        width: 5px; } }
-/* line 728, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+        width: 5px; }
+
+  /* line 726, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  html, body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; } }
+/* line 736, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .content-block {
   visibility: hidden; }
-  /* line 731, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 739, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-block.active {
     visibility: visible; }
 
-/* line 736, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 744, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .facebook-like-container {
   display: inline-block;
   margin-right: 8px;
