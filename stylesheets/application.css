@@ -638,15 +638,24 @@ h1, h2, h3, h4, h5, h6 {
   /* line 710, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-spy-dots {
     left: 0;
-    right: auto; } }
-/* line 717, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    right: auto;
+    padding: 0 6px; }
+    /* line 714, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    .scroll-spy-dots .dot {
+      height: 12px;
+      width: 12px; }
+      /* line 718, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+      .scroll-spy-dots .dot .dot-inner {
+        height: 8px;
+        width: 8px; } }
+/* line 728, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .content-block {
   visibility: hidden; }
-  /* line 720, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 731, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-block.active {
     visibility: visible; }
 
-/* line 725, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 736, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .facebook-like-container {
   display: inline-block;
   margin-right: 8px;
