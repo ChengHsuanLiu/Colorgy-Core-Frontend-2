@@ -158,14 +158,11 @@
 
   $(window).on('wheel', function(e){
 
-    var window_width = $(window).width();
-
     var eo = e.originalEvent;
     if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
       //e.preventDefault();
 
-      if(eo.wheelDeltaY < -10  /*&& !scope.item.swipedLeft*/){
-        console.log('down');
+      if(eo.wheelDeltaY < -10){
         if(state == 'active'){
           if(current_page == 3){
             return false;
@@ -174,8 +171,7 @@
         }
       }
 
-      if(eo.wheelDeltaY > 10  /*&& scope.item.swipedLeft*/ ){
-        console.log('up');
+      if(eo.wheelDeltaY > 10){
         if(state == 'active'){
           if(current_page == 0){
             return false;
@@ -217,4 +213,56 @@
 		$('.image-slides .screen-shine:nth-child(1)').addClass('active');
 
   })
+
+
+
+  // Mobile Touch event
+
+  var element = document.getElementById('html');
+	element.addEventListener("touchstart", touchStart, false);
+	element.addEventListener("touchmove", touchMove, false);
+
+	var start = {x:0,y:0};
+
+	function touchStart(e) {
+
+		start.x = event.touches[0].pageX;
+		start.y = event.touches[0].pageY;
+	}
+
+	function touchMove(e){
+
+		offset = {};
+
+		offset.x = start.x - event.touches[0].pageX;
+		offset.y = start.y - event.touches[0].pageY;
+		mobileTouchTrigger(offset.x , offset.y);
+		console.log(offset);
+		return offset;
+	}
+
+	function mobileTouchTrigger(dx, dy){
+    if(Math.abs(dx) < 10 && Math.abs(dy) > 2){
+      //e.preventDefault();
+
+      if(dy > -10){
+        if(state == 'active'){
+          if(current_page == 3){
+            return false;
+          }
+          scrollPageFunc(current_page + 1, 'godown');
+        }
+      }
+
+      if(dy < 10){
+        if(state == 'active'){
+          if(current_page == 0){
+            return false;
+          }
+          scrollPageFunc(current_page - 1, 'goup');
+        }
+      }
+    }
+
+	}
 </script>

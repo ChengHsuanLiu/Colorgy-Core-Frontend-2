@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .js-animate-this{
   	opacity: 0;
-
+		visibility: hidden;
   	transition: transform .6s, opacity 0.3s;
   	-webkit-transition: transform .6s, opacity 0.3s;
   	-moz-transition: transform .6s, opacity 0.3s;
@@ -210,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   		-moz-transform: translateY(-50px);
   		-o-transform: translateY(-50px);
   		-ms-transform: translateY(-50px);
+  		visibility: visible;
   	}
 
   	&.active{
@@ -219,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   		-moz-transform: translateY(0);
   		-o-transform: translateY(0);
   		-ms-transform: translateY(0);
+  		visibility: visible;
   	}
 
   	&.page-after{
@@ -228,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   		-moz-transform: translateY(50px);
   		-o-transform: translateY(50px);
   		-ms-transform: translateY(50px);
+  		visibility: visible;
   	}
   }
 }
@@ -487,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
 	// background-image: image-url('down-arrow.svg');
 	cursor: pointer;
 	display: block;
-	width: 80px;
+	width: auto;
 	height: 30px;
 	position: fixed;
 	bottom: 40px;
@@ -577,4 +580,52 @@ h1, h2, h3, h4, h5, h6 {
 			-o-transform: translate(-50%, -50%);
 		}
 	}
+}
+
+.facebook-slider{
+	position: fixed;
+	left: -340px;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	z-index: 1000;
+  transition: transform .8s;
+  -webkit-transition: transform .8s;
+  -moz-transition: transform .8s;
+  -o-transition: transform .8s;
+  -ms-transition: transform .8s;
+  height: 208px;
+  background: #FFF;
+  border-radius: 0 0 4px 0;
+
+
+	&:hover{
+		transform: translate(340px, -50%);
+		-webkit-transform: translate(340px, -50%);
+		-moz-transform: translate(340px, -50%);
+		-ms-transform: translate(340px, -50%);
+		-o-transform: translate(340px, -50%);
+
+	}
+
+	> .facebook-slider-trigger{
+		position: absolute;
+		left: 100%;
+		background: #3b5998;
+		color: #FFF;
+		padding: 8px;
+		text-align: center;
+		border-radius: 0 4px 4px 0;
+	}
+
+	> .facebook-slider-inner{
+	  width: 340px;
+	  height: 200px;
+	  overflow: hidden;
+
+	}
+
 }

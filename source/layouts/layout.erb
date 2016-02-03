@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="html">
   <head>
     <meta charset="utf-8">
 
@@ -16,6 +16,20 @@
   </head>
 
   <body class="<%= page_classes %> home-page">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=630424637093473";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="facebook-slider">
+      <div class="facebook-slider-trigger">F<br>A<br>C<br>E<br>B<br>O<br>O<br>K</div>
+      <div class="facebook-slider-inner">
+        <div class="fb-page" data-href="https://www.facebook.com/Colorgy-1529686803975150/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
