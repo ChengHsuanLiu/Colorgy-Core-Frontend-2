@@ -565,9 +565,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  @media screen and (max-width: 600px) {
-  	display: none;
-  }
 
 	.dot{
 		border: 2px solid transparent;
@@ -708,6 +705,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	.mobile-download-btn{
 		display: block;
+	}
+
+	.scroll-spy-dots{
+		left: 0;
+		right: auto;
 	}
 }
 
