@@ -2,8 +2,9 @@
 	<header class="header fluid-width mobile-full-width">
 		<a class="header-logo"><%= image_tag ('header_logo.png') %></a>
 		<div class="header-nav-links">
-			<a href="#" class="header-nav-link">About</a>
-			<a href="#" class="header-nav-link">FAQ</a>
+			<a class="facebook-like-container"><div><div class="fb-like" data-href="https://www.facebook.com/Colorgy-1529686803975150/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div></a>
+			<a href="#" class="header-nav-link">關於</a>
+			<a href="#" class="header-nav-link">常見問題</a>
 		</div>
 	</header>
 </div>
@@ -14,51 +15,47 @@
 
 				<div class="text-slide" data-slide="0">
 					<h2 class="js-animate-this">
-						Fit a lesson<br>
-						in anywhere.
+						Colorgy App<br>
+						幫你的大學生活上色
 					</h2>
-					<div>
-						<p class="js-animate-this delay">Primer is a fast, easy way to learn new marketing skills. You can take our bite-sized lessons wherever and whenever you have 5 minutes free.</p>
-						<div class="slide-cta js-animate-this delay-2">
-							<span>Get the app</span>
-							<a href=""></a>
-							<a href=""></a>
+					<div class="content-block" page="0">
+						<p class="js-animate-this delay">Colorgy APP 是個方便的校園生活幫手，目前主要著重於課表功能，讓你隨時隨地將課表帶著走，上課不再煩惱，還有其他酷炫的功能即將推出！</p>
+						<div class="js-animate-this delay-2">
+							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="text-slide" data-slide="1">
-					<h2 class="js-animate-this page-after">Get new topics every week.</h2>
-					<div>
-						<p class="js-animate-this page-after delay">Primer is a fast, easy way to learn new marketing skills. You can take our bite-sized lessons wherever and whenever you have 5 minutes free.</p>
-						<div class="slide-cta js-animate-this page-after delay-2">
-							<span>Get the app</span>
-							<a href=""></a>
-							<a href=""></a>
+					<h2 class="js-animate-this page-after">內建課程資料庫<br>&自由加課功能</h2>
+					<div class="content-block" page="1">
+						<p class="js-animate-this page-after delay">內建許多學校的課程資料，利用老師名稱、課程代碼等等搜尋即可選課、排課。也可以自己加入自己客製化的課、排程。</p>
+						<div class="js-animate-this delay-2">
+							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="text-slide" data-slide="2">
-					<h2 class="js-animate-this page-after">Get new topics every week.</h2>
-					<div>
-						<p class="js-animate-this page-after delay">Primer is a fast, easy way to learn new marketing skills. You can take our bite-sized lessons wherever and whenever you have 5 minutes free.</p>
-						<div class="slide-cta js-animate-this page-after delay-2">
-							<span>Get the app</span>
-							<a href=""></a>
-							<a href=""></a>
+					<h2 class="js-animate-this page-after">課程詳情<br>&我的同學</h2>
+					<div class="content-block" page="2">
+						<p class="js-animate-this page-after delay">課程詳細資訊一覽無遺，不再忘記上課地點、老師名稱，還可以看看有哪些同學跟你一起上課！</p>
+						<div class="js-animate-this delay-2">
+							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="text-slide" data-slide="3">
-					<h2 class="js-animate-this page-after">Get new topics every week.</h2>
-					<div>
-						<p class="js-animate-this page-after delay">Primer is a fast, easy way to learn new marketing skills. You can take our bite-sized lessons wherever and whenever you have 5 minutes free.</p>
-						<div class="slide-cta js-animate-this page-after delay-2">
-							<span>Get the app</span>
-							<a href=""></a>
-							<a href=""></a>
+					<h2 class="js-animate-this page-after">課堂提醒<br>&自訂提醒時間</h2>
+					<div class="content-block" page="3">
+						<p class="js-animate-this page-after delay">可以自己設定課程提醒時間，在每堂課之前提醒你要上課囉！不再因為要記住所有課程時間而煩惱～</p>
+						<div class="js-animate-this delay-2">
+							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
@@ -88,6 +85,9 @@
 	<a class="down-arrow" id="down-arrow">
 		<i class="ion-ios-arrow-down"></i>
 	</a>
+	<div class="mobile-download-btn">
+		<a id="mobile-download-btn-link" href="#" target="_blank">立即下載</a>
+	</div>
 </footer>
 
 <div class="scroll-spy-dots">
@@ -149,6 +149,9 @@
 			$('.image-slides .screen-shine:nth-child(' + image_page +')').addClass('active');
     }
 
+    $('.content-block').removeClass('active');
+    $('.content-block[page="' + target_page + '"]').add('active');
+
 		setTimeout(restTranslateState, 1000);
 	}
 
@@ -209,8 +212,19 @@
   })
 
   $(document).ready(function(){
+
 		$('.text-slide[data-slide="0"]').find('.js-animate-this').addClass('active');
 		$('.image-slides .screen-shine:nth-child(1)').addClass('active');
+		$('.content-block[page="0"]').addClass('active');
+
+		var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+
+		if (isiDevice)
+		{
+		  $('#mobile-download-btn-link').attr('href', 'https://itunes.apple.com/tw/app/colorgy/id998230121?l=zh&mt=8');
+		}else{
+			$('#mobile-download-btn-link').attr('href', 'https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp');
+		}
 
   })
 
