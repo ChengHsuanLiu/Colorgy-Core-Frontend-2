@@ -13,6 +13,13 @@
     <link href="stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="stylesheets/application.css" rel="stylesheet" type="text/css" />
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <script src="javascripts/application.js" type="text/javascript"></script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+      (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+      for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+      mixpanel.init("c361133e4b1cd003514f77e8c51ac4b6");
+    </script>
+    <!-- end Mixpanel -->
   </head>
 
   <body class="index home-page">
@@ -32,11 +39,11 @@
     </div>
     <div class="header-wrapper">
 	<header class="header fluid-width mobile-full-width">
-		<a class="header-logo"><img src="images/header_logo.png" /></a>
+		<a class="header-logo" href="#home"><img src="images/header_logo.png" /></a>
 		<div class="header-nav-links">
 			<a class="facebook-like-container"><div><div class="fb-like" data-href="https://www.facebook.com/Colorgy-1529686803975150/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div></a>
-			<a href="#" class="header-nav-link">關於</a>
-			<a href="#" class="header-nav-link">常見問題</a>
+			<a href="#about" class="header-nav-link">關於</a>
+			<a href="#faq" class="header-nav-link">常見問題</a>
 		</div>
 	</header>
 </div>
@@ -137,6 +144,75 @@
   </div>
 </div>
 
+
+<div class="fade-gradient"></div>
+<!-- FAQ Section -->
+<div class="faq-bg"></div>
+<section class="faq-section">
+	<div class="faq-section-inner">
+		<a class="close-faq close-section"><i class="ion-ios-close-empty"></i></a>
+		<div class="faq-item">
+			<p class="faq-q">
+				<span class="label">Q：</span>
+				How much does Primer cost?
+			</p>
+			<p class="faq-a">
+				<span class="label">A：</span>
+				Nothing. The app is totally free.
+			</p>
+		</div>
+		<div class="faq-item">
+			<p class="faq-q">
+				<span class="label">Q：</span>
+				Who’s Primer for?
+			</p>
+			<p class="faq-a">
+				<span class="label">A：</span>
+				Anyone looking to learn more about marketing -- from startup founders to small business owners to brand managers at Fortune 500 companies.
+			</p>
+		</div>
+		<div class="faq-item">
+			<p class="faq-q">
+				<span class="label">Q：</span>
+				What topics do you cover?
+			</p>
+			<p class="faq-a">
+				<span class="label">A：</span>
+				We provide lessons on topics like branding, storytelling, remarketing, SEO, and programmatic ad buying. In short, everything a marketer needs to be successful.
+			</p>
+		</div>
+		<div class="faq-item">
+			<p class="faq-q">
+				<span class="label">Q：</span>
+				How often will you update the app?
+			</p>
+			<p class="faq-a">
+				<span class="label">A：</span>
+				We’re releasing new lessons every week. Technical improvements and new features will be released periodically.
+			</p>
+		</div>
+		<div class="faq-item">
+			<p class="faq-q">
+				<span class="label">Q：</span>
+				Who creates the lessons in Primer?
+			</p>
+			<p class="faq-a">
+				<span class="label">A：</span>
+				First we look for the best explainers we can find. Then our creative team works with these experts to “Primerize” their knowledge, putting it into the Primer voice and thinking up interactions that enhance the learning experience.
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<section class="about-section">
+	<div class="about-section-inner">
+		<a class="close-about close-section"><i class="ion-ios-close-empty"></i></a>
+		<h2>About</h2>
+	</div>
+</section>
+
+
 <script type="text/javascript">
 
   var current_page = 0;
@@ -191,32 +267,61 @@
     state = 'active';
   }
 
-  $(window).on('wheel', function(e){
-  	console.log('onwheel');
-    var eo = e.originalEvent;
-    if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
-      //e.preventDefault();
+	// For Chrome
+	window.addEventListener('mousewheel', mouseWheelEvent);
 
-      if(eo.wheelDeltaY < -10){
-        if(state == 'active'){
-          if(current_page == 3){
-            return false;
-          }
-          scrollPageFunc(current_page + 1, 'godown');
-        }
-      }
+	// For Firefox
+	window.addEventListener('DOMMouseScroll', mouseWheelEvent);
 
-      if(eo.wheelDeltaY > 10){
-        if(state == 'active'){
-          if(current_page == 0){
-            return false;
-          }
-          scrollPageFunc(current_page - 1, 'goup');
+	function mouseWheelEvent(e) {
+    var delta = e.wheelDelta ? e.wheelDelta : -e.detail;
+	// }
+
+ //  $(window).bind('mousewheel DOMMouseScroll', function(e){
+  	console.log(delta);
+   //  var eo = e.originalEvent;
+   //  // if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
+  	// if(Math.abs(eo.deltaX) < 10 && Math.abs(eo.deltaY) > 2){
+   //    //e.preventDefault();
+
+   //    if(eo.wheelDeltaY < -10){
+   //      if(state == 'active'){
+   //        if(current_page == 3){
+   //          return false;
+   //        }
+   //        scrollPageFunc(current_page + 1, 'godown');
+   //      }
+   //    }
+
+   //    if(eo.wheelDeltaY > 10){
+   //      if(state == 'active'){
+   //        if(current_page == 0){
+   //          return false;
+   //        }
+   //        scrollPageFunc(current_page - 1, 'goup');
+   //      }
+   //    }
+   //  }
+
+    if(delta < -10){
+      if(state == 'active'){
+        if(current_page == 3){
+          return false;
         }
+        scrollPageFunc(current_page + 1, 'godown');
       }
     }
 
-  });
+    if(delta > 10){
+      if(state == 'active'){
+        if(current_page == 0){
+          return false;
+        }
+        scrollPageFunc(current_page - 1, 'goup');
+      }
+    }
+
+  };
 
   // $(document).on('click', '.dot', function(){
   //   var page_num = parseInt($(this).attr('page-order'));
@@ -240,11 +345,12 @@
   $(document).on('click', '#down-arrow', function(){
   	var target_page = current_page + 1;
   	var dir = 'godown';
-  	scrollPageFunc(target_page, dir)
+  	scrollPageFunc(target_page, dir);
+  	mixpanel.track("Click scroll down arrow");
   })
 
   $(document).ready(function(){
-
+  	mixpanel.track("Come to landing page");
 		$('.text-slide[data-slide="0"]').find('.js-animate-this').addClass('active');
 		$('.image-slides .screen-shine:nth-child(1)').addClass('active');
 		$('.content-block[page="0"]').addClass('active');
@@ -257,6 +363,8 @@
 		}else{
 			$('#mobile-download-btn-link').attr('href', 'https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp');
 		}
+
+		checkhash();
 
   })
 
@@ -271,7 +379,7 @@
 	var start = {x:0,y:0};
 
 	function touchStart(e) {
-
+		e.preventDefault();
 		start.x = event.touches[0].pageX;
 		start.y = event.touches[0].pageY;
 	}
@@ -312,6 +420,97 @@
     }
 
 	}
+
+
+	// Hash Change
+
+	$(window).on('hashchange', function(){
+		var hash = location.hash;
+		if(hash == '#faq'){
+			faqOpen();
+		}
+		else if(hash == '#about'){
+			aboutOpen();
+		}
+		else{
+			faqClose();
+			aboutClose();
+		}
+	})
+
+	function faqOpen(){
+		$('.about-section').removeClass('active');
+		$('.close-about').removeClass('active');
+		console.log('faqopen');
+		$('.faq-bg').addClass('active');
+		setTimeout(function(){
+			$('.close-faq').addClass('active');
+		}, 800);
+		setTimeout(function(){
+			$('.faq-section').addClass('active');
+		}, 800);
+		setTimeout(function(){
+			$('.fade-gradient').addClass('active');
+		}, 800);
+		state = 'disabled';
+		mixpanel.track("Open FAQ");
+	}
+
+	function faqClose(){
+		$('.fade-gradient').removeClass('active');
+		$('.faq-section').removeClass('active');
+		$('.close-faq').removeClass('active');
+		$('.faq-bg').removeClass('active');
+		location.hash = '';
+		state = 'active';
+	}
+
+	function aboutOpen(){
+		$('.faq-section').removeClass('active');
+		$('.close-faq').removeClass('active');
+		$('.faq-bg').addClass('active');
+		setTimeout(function(){
+			$('.close-about').addClass('active');
+		}, 800);
+		setTimeout(function(){
+			$('.about-section').addClass('active');
+		}, 800);
+		setTimeout(function(){
+			$('.fade-gradient').addClass('active');
+		}, 800);
+		state = 'disabled';
+		mixpanel.track("Open About");
+	}
+
+	function aboutClose(){
+		$('.fade-gradient').removeClass('active');
+		$('.about-section').removeClass('active');
+		$('.close-about').removeClass('active');
+		$('.faq-bg').removeClass('active');
+
+		location.hash = '';
+		state = 'active';
+	}
+
+	function checkhash(){
+		var hash = location.hash;
+		if(hash){
+			if(hash == '#faq'){
+				faqOpen();
+			}
+			if(hash == '#about'){
+				aboutOpen();
+			}
+		}
+	}
+
+	$(document).on('click', '.close-faq', function(){
+		faqClose();
+	})
+
+	$(document).on('click', '.close-about', function(){
+		aboutClose();
+	})
 </script>
 
   </body>
