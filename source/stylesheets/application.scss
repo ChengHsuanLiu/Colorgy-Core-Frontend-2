@@ -1,3 +1,6 @@
+*{
+	letter-spacing: 1px;
+}
 
 html, body{
   overflow: hidden;
@@ -9,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 
 .header-wrapper{
   position: fixed;
@@ -401,8 +405,9 @@ h1, h2, h3, h4, h5, h6 {
 
   h2{
     margin-bottom: 25px;
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: 4px;
     color: #fff;
   }
 
@@ -557,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
 .scroll-spy-dots{
 	position: fixed;
 	padding: 0 12px;
-  z-index: 99;
+  z-index: 89;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -745,4 +750,198 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	margin-right: 8px;
 	vertical-align: middle;
+}
+
+.faq-bg{
+	position: fixed;
+	top: -50%;
+	right: -50%;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	// z-index: 1001;
+	z-index: 90;
+  background: #00CFE4;
+  transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
+  -webkit-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
+  -moz-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
+  -o-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
+  -ms-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
+
+	&.active{
+		width: 200%;
+		height: 200%;
+		opacity: 1;
+    background: #F89680;
+	}
+}
+
+.close-section{
+	position: absolute;
+	top: 120px;
+	right: 0px;
+	z-index: 1001;
+  transition: transform .5s, opacity .5s;
+  -webkit-transition: transform .5s, opacity .5s;
+  -moz-transition: transform .5s, opacity .5s;
+  -o-transition: transform .5s, opacity .5s;
+  -ms-transition: transform .5s, opacity .5s;
+  opacity: 0;
+  cursor: pointer;
+	transform: translate(100px, 0) rotate(360deg);
+	-webkit-transform: translate(100px, 0) rotate(360deg);
+	-moz-transform: translate(100px, 0) rotate(360deg);
+	-o-transform: translate(100px, 0) rotate(360deg);
+	-ms-transform: translate(100px, 0) rotate(360deg);
+
+	&.active{
+		transform: translate(0, 0) rotate(0deg);
+		-webkit-transform: translate(0, 0) rotate(0deg);
+		-moz-transform: translate(0, 0) rotate(0deg);
+		-o-transform: translate(0, 0) rotate(0deg);
+		-ms-transform: translate(0, 0) rotate(0deg);
+		opacity: 1;
+	  &:hover{
+	  	opacity: 0.4;
+			transform: translate(0, -12px) rotate(0deg);
+			-webkit-transform: translate(0, -12px) rotate(0deg);
+			-moz-transform: translate(0, -12px) rotate(0deg);
+			-o-transform: translate(0, -12px) rotate(0deg);
+			-ms-transform: translate(0, -12px) rotate(0deg);
+	  }
+	}
+
+
+	> i{
+		font-size: 80px;
+		color: #FFF;
+	}
+}
+
+// FAQ
+
+.faq-section{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	z-index: 91;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, 120px);
+	-webkit-transform: translate(0, 120px);
+	-moz-transform: translate(0, 120px);
+	-o-transform: translate(0, 120px);
+	-ms-transform: translate(0, 120px);
+
+  transition: transform .5s, opacity .5s;
+  -webkit-transition: transform .5s, opacity .5s;
+  -moz-transition: transform .5s, opacity .5s;
+  -o-transition: transform .5s, opacity .5s;
+  -ms-transition: transform .5s, opacity .5s;
+
+	&.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+	}
+
+
+	> .faq-section-inner{
+		padding: 12px;
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 120px 0 40px 0;
+		position: relative;
+	}
+}
+
+.faq-item{
+	border-left: 3px solid #FFF;
+  padding: 0 24px;
+  margin: 60px 0;
+
+	p {
+		color: #FFF;
+    line-height: 24px;
+    font-size: 16px;
+	}
+}
+
+// About
+
+.about-section{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	z-index: 91;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, 120px);
+	-webkit-transform: translate(0, 120px);
+	-moz-transform: translate(0, 120px);
+	-o-transform: translate(0, 120px);
+	-ms-transform: translate(0, 120px);
+
+  transition: transform .5s, opacity .5s;
+  -webkit-transition: transform .5s, opacity .5s;
+  -moz-transition: transform .5s, opacity .5s;
+  -o-transition: transform .5s, opacity .5s;
+  -ms-transition: transform .5s, opacity .5s;
+
+	&.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+	}
+
+	> .about-section-inner{
+		padding: 12px;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 180px 0 40px 0;
+		position: relative;
+
+	}
+}
+
+
+.fade-gradient {
+  position: fixed;
+  z-index: 95;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 150px;
+  opacity: 0;
+  visibility: hidden;
+  background-image: -webkit-linear-gradient(bottom,rgba(#F89680,.1) 40%, #F89680 85%);
+  background-image: linear-gradient(to top,rgba(#F89680,.1) 40%, #F89680 85%);
+  -webkit-backface-visibility: hidden;
+  pointer-events: auto;
+
+  transition: opacity .4s, visibility 2s;
+  -webkit-transition: opacity .4s, visibility 2s;
+  -moz-transition: opacity .4s, visibility 2s;
+  -o-transition: opacity .4s, visibility 2s;
+  -ms-transition: opacity .4s, visibility 2s;
+
+  &.active{
+  	opacity: 1;
+  	visibility: visible;
+  }
 }
