@@ -60,8 +60,8 @@
 					<div class="content-block" page="0">
 						<p class="js-animate-this delay">Colorgy APP 是個方便的校園生活幫手，目前主要著重於課表功能，讓你隨時隨地將課表帶著走，上課不再煩惱，還有其他酷炫的功能即將推出！</p>
 						<div class="js-animate-this delay-2">
-							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
-							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
+							<a class="slide-cta" href="https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp" target="_blank"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="https://itunes.apple.com/tw/app/colorgy/id998230121?l=zh&mt=8" target="_blank"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
@@ -71,8 +71,8 @@
 					<div class="content-block" page="1">
 						<p class="js-animate-this page-after delay">內建許多學校的課程資料，利用老師名稱、課程代碼等等搜尋即可選課、排課。也可以自己加入自己客製化的課、排程。</p>
 						<div class="js-animate-this delay-2">
-							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
-							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
+							<a class="slide-cta" href="https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp" target="_blank"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="https://itunes.apple.com/tw/app/colorgy/id998230121?l=zh&mt=8" target="_blank"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
@@ -82,8 +82,8 @@
 					<div class="content-block" page="2">
 						<p class="js-animate-this page-after delay">課程詳細資訊一覽無遺，不再忘記上課地點、老師名稱，還可以看看有哪些同學跟你一起上課！</p>
 						<div class="js-animate-this delay-2">
-							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
-							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
+							<a class="slide-cta" href="https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp" target="_blank"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="https://itunes.apple.com/tw/app/colorgy/id998230121?l=zh&mt=8" target="_blank"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
@@ -93,8 +93,8 @@
 					<div class="content-block" page="3">
 						<p class="js-animate-this page-after delay">可以自己設定課程提醒時間，在每堂課之前提醒你要上課囉！不再因為要記住所有課程時間而煩惱～</p>
 						<div class="js-animate-this delay-2">
-							<a class="slide-cta" href="#"><i class="ion-social-android"></i>Android 下載</a>
-							<a class="slide-cta" href="#"><i class="ion-social-apple"></i>iOS 下載</a>
+							<a class="slide-cta" href="https://play.google.com/store/apps/details?id=io.colorgy.cordovaapp" target="_blank"><i class="ion-social-android"></i>Android 下載</a>
+							<a class="slide-cta" href="https://itunes.apple.com/tw/app/colorgy/id998230121?l=zh&mt=8" target="_blank"><i class="ion-social-apple"></i>iOS 下載</a>
 						</div>
 					</div>
 				</div>
@@ -510,6 +510,14 @@
 
 	$(document).on('click', '.close-about', function(){
 		aboutClose();
+	})
+
+	$(document).on('click', '.ion-social-android', function(){
+		mixpanel.track("Download Android");
+	})
+
+	$(document).on('click', '.ion-social-apple', function(){
+		mixpanel.track("Download iOS");
 	})
 </script>
 
