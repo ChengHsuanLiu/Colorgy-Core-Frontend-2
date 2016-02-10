@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 57, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .header .header-nav-link {
-  color: #fff;
+  color: #4A4A4A;
   display: inline-block;
   font-size: 16px;
   line-height: 16px;
@@ -67,43 +67,43 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all .3s;
   -o-transition: all .3s;
   -ms-transition: all .3s;
-  border: 2px solid #FFF;
+  border: 2px solid #4A4A4A;
   vertical-align: middle; }
-  /* line 75, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 77, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .header .header-nav-link:hover {
     background: #FFF;
     color: #586971;
     border: 2px solid #FFF; }
 
-/* line 82, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 84, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .scroll-section {
   height: 6000px !important; }
-  /* line 85, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 87, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-section.scroll-section-one {
-    background: #4fd0ea;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fd0ea), color-stop(100%, #4BB7B9));
-    background: -webkit-linear-gradient(top, #4fd0ea 0, #4BB7B9 100%);
-    background: linear-gradient(to bottom, #4fd0ea 0, #4BB7B9 100%);
+    background: #F89680;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F89680), color-stop(100%, #B0A79D));
+    background: -webkit-linear-gradient(top, #F89680 0, #B0A79D 100%);
+    background: linear-gradient(to bottom, #F89680 0, #B0A79D 100%);
     background-repeat: no-repeat; }
-  /* line 93, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 95, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-section.scroll-section-two {
-    background: #4BB7B9;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4BB7B9), color-stop(100%, #6AB981));
-    background: -webkit-linear-gradient(top, #4BB7B9 0, #6AB981 100%);
-    background: linear-gradient(to bottom, #4BB7B9 0, #6AB981 100%);
+    background: #B0A79D;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B0A79D), color-stop(100%, #76C0C2));
+    background: -webkit-linear-gradient(top, #B0A79D 0, #76C0C2 100%);
+    background: linear-gradient(to bottom, #B0A79D 0, #76C0C2 100%);
     background-repeat: no-repeat; }
-  /* line 101, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 103, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-section.scroll-section-three {
-    background: #6AB981;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6AB981), color-stop(100%, #AAD292));
-    background: -webkit-linear-gradient(top, #6AB981 0, #AAD292 100%);
-    background: linear-gradient(to bottom, #6AB981 0, #AAD292 100%);
+    background: #76C0C2;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76C0C2), color-stop(100%, #00CFE4));
+    background: -webkit-linear-gradient(top, #76C0C2 0, #00CFE4 100%);
+    background: linear-gradient(to bottom, #76C0C2 0, #00CFE4 100%);
     background-repeat: no-repeat; }
-  /* line 109, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 111, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-section.scroll-section-four {
-    background: #AAD292; }
+    background: #00CFE4; }
 
-/* line 114, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 116, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content {
   position: fixed;
   top: 0;
@@ -116,17 +116,17 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%; }
 
-/* line 127, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 129, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content .content {
   display: table-cell;
   vertical-align: middle; }
 
-/* line 132, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 134, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content .device-frame {
   position: relative;
   float: left; }
 
-/* line 137, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 139, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content .device-frame .screen-shine {
   position: absolute;
   top: 0;
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: transform 1.2s;
   -o-transition: transform 1.2s;
   -ms-transition: transform 1.2s; }
-  /* line 158, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 160, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .screen-shine.active {
     transform: translateY(0%);
     -webkit-transform: translateY(0%);
@@ -154,18 +154,18 @@ h1, h2, h3, h4, h5, h6 {
     -o-transform: translateY(0%);
     -ms-transform: translateY(0%); }
 
-/* line 167, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 169, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content .constrain {
   max-width: 720px;
   margin: 0 auto; }
 
-/* line 172, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 174, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fixed-content .device {
   position: relative;
   top: 25px;
-  width: 322px; }
+  width: 240px; }
 
-/* line 178, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 180, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .slide-cta {
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.2);
@@ -175,22 +175,22 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   display: table;
   content: ' ';
-  color: #FFF;
+  color: #4A4A4A;
   text-decoration: none;
   transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s; }
-  /* line 196, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 199, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .slide-cta > i {
     font-size: 20px;
     margin-right: 8px; }
-  /* line 201, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 204, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .slide-cta:hover {
     opacity: 0.6; }
 
-/* line 206, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 209, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide {
   position: absolute;
   top: 0;
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateY(48%);
   z-index: 0;
   visibility: hidden; }
-  /* line 216, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 219, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .text-slide .js-animate-this {
     opacity: 0;
     visibility: hidden;
@@ -209,21 +209,21 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: transform .6s, opacity 0.3s;
     -o-transition: transform .6s, opacity 0.3s;
     -ms-transition: transform .6s, opacity 0.3s; }
-    /* line 225, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 228, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .text-slide .js-animate-this.delay {
       transition-delay: 0.1s;
       -webkit-transition-delay: 0.1s;
       -moz-transition-delay: 0.1s;
       -o-transition-delay: 0.1s;
       -ms-transition-delay: 0.1s; }
-    /* line 233, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 236, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .text-slide .js-animate-this.delay-2 {
       transition-delay: 0.3s;
       -webkit-transition-delay: 0.3s;
       -moz-transition-delay: 0.3s;
       -o-transition-delay: 0.3s;
       -ms-transition-delay: 0.3s; }
-    /* line 241, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 244, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .text-slide .js-animate-this.page-before {
       opacity: 0;
       transform: translateY(-50px);
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
       -moz-transform: translateY(-50px);
       -o-transform: translateY(-50px);
       -ms-transform: translateY(-50px); }
-    /* line 250, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 253, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .text-slide .js-animate-this.active {
       opacity: 1;
       transform: translateY(0);
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
       -o-transform: translateY(0);
       -ms-transform: translateY(0);
       visibility: visible; }
-    /* line 260, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 263, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .text-slide .js-animate-this.page-after {
       opacity: 0;
       transform: translateY(50px);
@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
       -o-transform: translateY(50px);
       -ms-transform: translateY(50px); }
 
-/* line 274, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 277, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide p.js-animate-this.page-before {
   opacity: 0;
   transform: translateY(-40px);
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(-40px);
   -o-transform: translateY(-40px);
   -ms-transform: translateY(-40px); }
-/* line 283, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 286, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide p.js-animate-this.active {
   opacity: 1;
   transform: translateY(0);
@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(0);
   -o-transform: translateY(0);
   -ms-transform: translateY(0); }
-/* line 292, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 295, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide p.js-animate-this.page-after {
   opacity: 0;
   transform: translateY(40px);
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(40px);
   -o-transform: translateY(40px);
   -ms-transform: translateY(40px); }
-/* line 303, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 306, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide h2.js-animate-this.page-before {
   opacity: 0;
   transform: translateY(-20px);
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(-20px);
   -o-transform: translateY(-20px);
   -ms-transform: translateY(-20px); }
-/* line 312, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 315, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide h2.js-animate-this.active {
   opacity: 1;
   transform: translateY(0);
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(0);
   -o-transform: translateY(0);
   -ms-transform: translateY(0); }
-/* line 321, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 324, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .text-slide h2.js-animate-this.page-after {
   opacity: 0;
   transform: translateY(20px);
@@ -298,35 +298,35 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: translateY(20px);
   -ms-transform: translateY(20px); }
 
-/* line 333, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 336, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .scroll-container {
   transition: transform 1s;
   -webkit-transition: transform 1s;
   -moz-transition: transform 1s;
   -o-transition: transform 1s;
   -ms-transition: transform 1s; }
-  /* line 341, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 344, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-container[page="0"] {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -o-transform: translateY(0);
     -ms-transform: translateY(0); }
-  /* line 348, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 351, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-container[page="1"] {
     transform: translateY(-6000px);
     -webkit-transform: translateY(-6000px);
     -moz-transform: translateY(-6000px);
     -o-transform: translateY(-6000px);
     -ms-transform: translateY(-6000px); }
-  /* line 355, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 358, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-container[page="2"] {
     transform: translateY(-12000px);
     -webkit-transform: translateY(-12000px);
     -moz-transform: translateY(-12000px);
     -o-transform: translateY(-12000px);
     -ms-transform: translateY(-12000px); }
-  /* line 362, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 365, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-container[page="3"] {
     transform: translateY(-18000px);
     -webkit-transform: translateY(-18000px);
@@ -335,136 +335,136 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: translateY(-18000px); }
 
 @media only screen and (max-width: 1140px) and (min-width: 769px) {
-  /* line 372, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 375, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .text-slide {
     top: -50px;
     width: 340px; }
 
-  /* line 377, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 380, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .device {
-    width: 266px; }
+    width: 220px; }
 
-  /* line 381, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 384, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .constrain {
     max-width: 610px; }
 
-  /* line 385, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 388, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .image-slides {
     display: block;
     width: 196px;
     height: 348px;
     position: absolute;
-    top: 56px;
-    left: 8px;
+    top: 70px;
+    left: 12px;
     z-index: 10;
     overflow: hidden; } }
-/* line 398, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 401, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .content-text {
   color: #fff;
   float: right;
-  width: 380px;
+  width: 420px;
   margin-right: 20px;
   position: relative;
   z-index: 10; }
-  /* line 406, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 409, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text h2 {
     margin-bottom: 25px;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 50px;
     letter-spacing: 4px;
-    color: #fff; }
-  /* line 414, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    color: #4A4A4A; }
+  /* line 418, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text p {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #4A4A4A; }
 
 @media only screen and (max-width: 1140px) {
-  /* line 422, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 427, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text {
     width: 340px;
     float: right; } }
 @media only screen and (min-width: 1141px) {
-  /* line 429, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 434, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .image-slides {
     display: block;
     position: absolute;
-    top: 63px;
-    left: 10px;
+    top: 80px;
+    left: 13px;
     right: 0;
-    width: 234px;
-    height: 414px;
+    width: 214px;
+    height: 370px;
     z-index: 10;
     overflow: hidden; } }
 @media only screen and (max-width: 768px) {
-  /* line 443, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 448, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .home-page .device-frame {
     position: relative;
     left: 0;
     right: 0; }
 
-  /* line 449, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 454, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame {
     position: absolute;
     float: none;
     padding-top: 210px; }
 
-  /* line 454, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 459, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .device {
     margin: 0 auto;
     display: block;
-    right: -29px;
-    width: 280px; }
+    width: 250px; }
 
-  /* line 460, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 464, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .device-frame .image-slides {
     display: block;
     position: absolute;
-    top: 268px;
+    top: 296px;
     left: 0;
     right: 0;
-    width: 203px;
-    height: 368px;
+    width: 218px;
+    height: 410px;
     z-index: 10;
     margin: 0 auto;
     overflow: hidden; }
 
-  /* line 473, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 477, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .header-logo {
     display: block;
     text-align: center; }
-    /* line 477, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 481, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .header-logo > img {
       width: 150px;
       height: auto; }
 
-  /* line 484, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 488, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .header-nav-links {
     display: none; }
 
-  /* line 488, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 492, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fixed-content .content {
     display: block; }
 
-  /* line 492, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 496, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text {
     float: none;
     width: 100%; }
 
-  /* line 497, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 501, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text p {
     display: none; }
 
-  /* line 501, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 505, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .text-slide {
     text-align: center;
     width: 100%;
     top: 0; }
 
-  /* line 507, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 511, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .slide-cta {
     float: none;
     margin: 30px auto 0; } }
-/* line 514, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 518, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .down-arrow {
   cursor: pointer;
   display: block;
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: transform .5s, opacity .5s;
   -ms-transition: transform .5s, opacity .5s;
   visibility: visible; }
-  /* line 540, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 544, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .down-arrow:hover {
     opacity: 0.4;
     transform: translate(-50%, -12px);
@@ -494,17 +494,17 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transform: translate(-50%, -12px);
     -o-transform: translate(-50%, -12px);
     -ms-transform: translate(-50%, -12px); }
-  /* line 549, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 553, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .down-arrow > i {
     font-size: 60px;
     color: #FFF; }
-  /* line 554, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 558, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .down-arrow.fade-out {
     opacity: 0;
     visibility: hidden;
     cursor: inherit; }
 
-/* line 562, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 566, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .scroll-spy-dots {
   position: fixed;
   padding: 0 12px;
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%); }
-  /* line 574, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 578, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-spy-dots .dot {
     border: 2px solid transparent;
     padding: 1px;
@@ -525,13 +525,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 18px;
     position: relative;
     margin: 4px 0; }
-    /* line 584, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 588, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .scroll-spy-dots .dot.active {
-      border: 2px solid #FFF; }
-      /* line 587, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+      border: 2px solid #4A4A4A; }
+      /* line 592, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
       .scroll-spy-dots .dot.active > .dot-inner {
         opacity: 1; }
-    /* line 592, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 597, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .scroll-spy-dots .dot .dot-inner {
       position: absolute;
       top: 50%;
@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 10px;
       width: 10px;
       border-radius: 50%;
-      background: #FFF;
+      background: #4A4A4A;
       opacity: 0.8;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%); }
 
-/* line 610, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 616, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .facebook-slider {
   position: fixed;
   left: -340px;
@@ -566,14 +566,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 208px;
   background: #FFF;
   border-radius: 0 0 4px 0; }
-  /* line 630, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 636, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .facebook-slider:hover {
     transform: translate(340px, -50%);
     -webkit-transform: translate(340px, -50%);
     -moz-transform: translate(340px, -50%);
     -ms-transform: translate(340px, -50%);
     -o-transform: translate(340px, -50%); }
-  /* line 639, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 645, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .facebook-slider > .facebook-slider-trigger {
     position: absolute;
     left: 100%;
@@ -582,13 +582,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px;
     text-align: center;
     border-radius: 0 4px 4px 0; }
-  /* line 649, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 655, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .facebook-slider > .facebook-slider-inner {
     width: 340px;
     height: 200px;
     overflow: hidden; }
 
-/* line 660, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 666, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .mobile-download-btn {
   display: none;
   position: fixed;
@@ -601,80 +601,80 @@ h1, h2, h3, h4, h5, h6 {
   background: #F89680;
   z-index: 111;
   box-sizing: border-box; }
-  /* line 673, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 679, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .mobile-download-btn > a {
     display: block;
     padding: 16px 0;
     text-decoration: none;
     color: #FFF; }
-    /* line 679, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 685, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .mobile-download-btn > a:hover {
       color: #FFF; }
-    /* line 683, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 689, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .mobile-download-btn > a:focus {
       color: #FFF; }
 
 @media only screen and (max-width: 768px) {
-  /* line 690, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 696, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .facebook-slider {
     display: none; }
 
-  /* line 694, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 700, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .slide-cta {
     visibility: hidden;
     opacity: 0; }
 
-  /* line 699, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 705, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-text h2 {
     font-size: 30px; }
 
-  /* line 703, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 709, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .header-wrapper {
     margin-top: 8%; }
 
-  /* line 707, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 713, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .down-arrow {
     display: none; }
 
-  /* line 711, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 717, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .mobile-download-btn {
     display: block; }
 
-  /* line 715, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 721, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .scroll-spy-dots {
     left: 0;
     right: auto;
     padding: 0 6px; }
-    /* line 719, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 725, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .scroll-spy-dots .dot {
       height: 8px;
       width: 8px; }
-      /* line 723, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+      /* line 729, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
       .scroll-spy-dots .dot .dot-inner {
         height: 5px;
         width: 5px; }
 
-  /* line 731, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 737, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   html, body {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; } }
-/* line 741, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 747, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .content-block {
   visibility: hidden; }
-  /* line 744, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 750, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .content-block.active {
     visibility: visible; }
 
-/* line 749, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 755, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .facebook-like-container {
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle; }
 
-/* line 755, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 761, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .faq-bg {
   position: fixed;
   top: -50%;
@@ -690,14 +690,14 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
   -o-transition: width .8s, height .8s, background 2.5s, opacity 1.5s;
   -ms-transition: width .8s, height .8s, background 2.5s, opacity 1.5s; }
-  /* line 772, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 778, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .faq-bg.active {
     width: 200%;
     height: 200%;
     opacity: 1;
     background: #F89680; }
 
-/* line 780, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 786, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .close-section {
   position: absolute;
   top: 120px;
@@ -715,7 +715,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translate(100px, 0) rotate(360deg);
   -o-transform: translate(100px, 0) rotate(360deg);
   -ms-transform: translate(100px, 0) rotate(360deg); }
-  /* line 798, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 804, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .close-section.active {
     transform: translate(0, 0) rotate(0deg);
     -webkit-transform: translate(0, 0) rotate(0deg);
@@ -723,7 +723,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transform: translate(0, 0) rotate(0deg);
     -ms-transform: translate(0, 0) rotate(0deg);
     opacity: 1; }
-    /* line 805, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+    /* line 811, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
     .close-section.active:hover {
       opacity: 0.4;
       transform: translate(0, -12px) rotate(0deg);
@@ -731,12 +731,12 @@ h1, h2, h3, h4, h5, h6 {
       -moz-transform: translate(0, -12px) rotate(0deg);
       -o-transform: translate(0, -12px) rotate(0deg);
       -ms-transform: translate(0, -12px) rotate(0deg); }
-  /* line 816, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 822, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .close-section > i {
     font-size: 80px;
     color: #FFF; }
 
-/* line 824, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 830, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .faq-section {
   position: fixed;
   height: 100%;
@@ -756,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: transform .5s, opacity .5s;
   -o-transition: transform .5s, opacity .5s;
   -ms-transition: transform .5s, opacity .5s; }
-  /* line 845, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 851, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .faq-section.active {
     opacity: 1;
     visibility: visible;
@@ -765,7 +765,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     -ms-transform: translate(0, 0); }
-  /* line 856, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 862, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .faq-section > .faq-section-inner {
     padding: 12px;
     max-width: 600px;
@@ -774,18 +774,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 120px 0 40px 0;
     position: relative; }
 
-/* line 866, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 872, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .faq-item {
   border-left: 3px solid #FFF;
   padding: 0 24px;
   margin: 60px 0; }
-  /* line 871, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 877, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .faq-item p {
     color: #FFF;
     line-height: 24px;
     font-size: 16px; }
 
-/* line 880, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 886, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .about-section {
   position: fixed;
   height: 100%;
@@ -805,7 +805,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: transform .5s, opacity .5s;
   -o-transition: transform .5s, opacity .5s;
   -ms-transition: transform .5s, opacity .5s; }
-  /* line 901, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 907, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .about-section.active {
     opacity: 1;
     visibility: visible;
@@ -814,7 +814,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     -ms-transform: translate(0, 0); }
-  /* line 911, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 917, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .about-section > .about-section-inner {
     padding: 12px;
     max-width: 800px;
@@ -823,7 +823,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 180px 0 40px 0;
     position: relative; }
 
-/* line 923, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+/* line 929, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
 .fade-gradient {
   position: fixed;
   z-index: 95;
@@ -842,7 +842,128 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: opacity .4s, visibility 2s;
   -o-transition: opacity .4s, visibility 2s;
   -ms-transition: opacity .4s, visibility 2s; }
-  /* line 943, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+  /* line 949, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
   .fade-gradient.active {
     opacity: 1;
     visibility: visible; }
+
+/* line 955, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-content {
+  position: relative;
+  height: 100%; }
+
+/* line 961, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-one .group4 {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+/* line 967, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-one .group6 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%); }
+/* line 978, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-one .group7 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%); }
+/* line 989, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-one .mask {
+  position: absolute; }
+
+/* line 995, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-two .group4 {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+/* line 1001, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-two .group2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%); }
+/* line 1012, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-two .group3 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%); }
+/* line 1023, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-two .mask {
+  position: absolute; }
+
+/* line 1029, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-three .group3 {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+/* line 1035, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-three .group6 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%); }
+/* line 1046, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-three .group4 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%); }
+/* line 1057, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-three .mask {
+  position: absolute; }
+
+/* line 1063, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-four .group6 {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+/* line 1069, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-four .group4 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%); }
+/* line 1080, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-four .group7 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%); }
+/* line 1091, /Users/Lucas/Project/Colorgy-Core-Frontend-2/source/stylesheets/application.scss */
+.scroll-section-four .mask {
+  position: absolute; }
