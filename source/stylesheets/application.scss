@@ -675,6 +675,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: #F89680;
   z-index: 111;
   box-sizing: border-box;
+  border-top: 2px solid #FFF;
 
   > a {
   	display: block;
@@ -962,6 +963,8 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		width: 280px;
+		height: auto;
 	}
 
 	.group6{
@@ -973,6 +976,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
+		width: 280px;
+		height: auto;
 	}
 
 	.group7{
@@ -984,6 +989,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateX(50%);
 		-ms-transform: translateX(50%);
 		-o-transform: translateX(50%);
+		width: 400px;
+		height: auto;
 	}
 
 	.mask{
@@ -996,6 +1003,8 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		width: 450px;
+		height: auto;
 	}
 
 	.group2{
@@ -1007,6 +1016,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
+		width: 280px;
+		height: auto;
 	}
 
 	.group3{
@@ -1018,6 +1029,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateX(50%);
 		-ms-transform: translateX(50%);
 		-o-transform: translateX(50%);
+		width: 500px;
+		height: auto;
 	}
 
 	.mask{
@@ -1030,6 +1043,8 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		width: 1000px;
+		height: auto;
 	}
 
 	.group6{
@@ -1041,6 +1056,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
+		width: 280px;
+		height: auto;
 	}
 
 	.group4{
@@ -1052,6 +1069,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateX(50%);
 		-ms-transform: translateX(50%);
 		-o-transform: translateX(50%);
+		width: 400px;
+		height: auto;
 	}
 
 	.mask{
@@ -1064,6 +1083,8 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		width: 300px;
+		height: auto;
 	}
 
 	.group4{
@@ -1075,6 +1096,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
+		width: 300px;
+		height: auto;
 	}
 
 	.group7{
@@ -1086,6 +1109,8 @@ h1, h2, h3, h4, h5, h6 {
 		-moz-transform: translateX(50%);
 		-ms-transform: translateX(50%);
 		-o-transform: translateX(50%);
+		width: 400px;
+		height: auto;
 	}
 
 	.mask{
@@ -1101,4 +1126,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-content{
 	color: #FFF;
 	line-height: 40px;
+}
+
+@media only screen and (max-width: 769px){
+	.scroll-section img{
+		display: none;
+	}
 }
