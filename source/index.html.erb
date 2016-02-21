@@ -382,14 +382,14 @@
 
 	function touchStart(e) {
 		console.log('hehe');
-		e.preventDefault();
+		// e.preventDefault();
 		start.x = event.touches[0].pageX;
 		start.y = event.touches[0].pageY;
 	}
 
 	function touchMove(e){
 		console.log('hehe');
-		e.preventDefault();
+		// e.preventDefault();
 		offset = {};
 
 		offset.x = start.x - event.touches[0].pageX;
