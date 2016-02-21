@@ -13,6 +13,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.mixpanel-tag{
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+
+	@media screen and (max-width: 769px) {
+		display: none;
+	}
+}
+
 
 .header-wrapper{
   position: fixed;
